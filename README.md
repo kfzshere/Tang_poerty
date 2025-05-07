@@ -13,7 +13,7 @@ This is my study record of Tang poetry
 ```powershell
 git init
 git remote add origin git@github.com:yourusername/yourrepo.git
-get status //查看是否绑定成功
+git status //查看是否绑定成功
 ssh -T git@github.com //同上
 ```
 #### **2. 后续提交**
