@@ -13,9 +13,8 @@ This is my study record of Tang poetry
 ```powershell
 git init
 git remote add origin git@github.com:yourusername/yourrepo.git
-git add .
-git commit -m "first commit"
-git push -u origin main
+get status //查看是否绑定成功
+ssh -T git@github.com //同上
 ```
 #### **2. 后续提交**
 **- 使用命令行**
@@ -30,6 +29,14 @@ git push
 Start-Service ssh-agent  
 ssh-add C:\Users\13017\.ssh\id_rsa
 ```
+
+#### **3. 如果绑定错误**
+**- 移除错误仓库绑定**
+```
+Remove-Item -Recurse -Force .git //先解绑
+git status//看是否解除状态
+```
+
 
 #### Tips:推送(Push)与同步(Sync)  
 **推送**：把本地仓库的提交上传到远程仓库，commit只会保存在本地
