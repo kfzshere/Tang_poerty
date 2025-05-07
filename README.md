@@ -25,7 +25,7 @@ git add .
 git commit -m "update"  
 git push
 ```
-**2. 使用拓展**
+**2. 使用拓展**  
 每次提交需打开SSH agent进程：  
 ```
 Start-Service ssh-agent  
